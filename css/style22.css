@@ -1,0 +1,377 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #1E1E1E;
+    color: #D5C9BE;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header */
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(30, 30, 30, 0.95);
+    z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+  
+  .nav a {
+    color: #D5C9BE;
+    text-decoration: none;
+    font-style: italic;
+  }
+  
+  /* Hero */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 15px;
+    gap: 30px;
+  }
+  
+  .hero-text {
+    flex: 1 1 300px;
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero-price {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #D5C9BE;
+  }
+  
+  .hero-tick {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    filter: invert(90%) sepia(5%) saturate(200%) hue-rotate(10deg);
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 6px;
+    color: #fff;
+  }
+  
+  .order-btn {
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-style: italic;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .order-btn:hover {
+    background: #ccc;
+  }
+  
+  .hero-img {
+    flex: 1 1 300px;
+  }
+  
+  /* Features */
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 15px;
+  }
+  
+  .features .image,
+  .features .text {
+    flex: 1 1 300px;
+  }
+  
+  .features .text ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    color: #000;
+    padding: 40px 20px;
+    max-height: 100%;
+  }
+  
+  .contact-form h2 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .contact-form button {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-img {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1E1E1E;
+    color: #D5C9BE;
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D5C9BE;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #D5C9BE;
+    font-style: italic;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .footer-column.center {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-column.right {
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .footer .socials {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .footer .socials a img {
+    width: 20px;
+    height: 20px;
+    filter: invert(90%) sepia(5%) saturate(200%) hue-rotate(10deg);
+  }
+  
+  .footer .footer-order-btn {
+    background-color: #fff;
+    color: #000;
+    font-style: italic;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .footer .footer-order-btn:hover {
+    background-color: #ccc;
+  }
+  
+  .footer .privacy,
+  .footer .terms {
+    color: #D5C9BE;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .footer .privacy:hover,
+  .footer .terms:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .hero,
+    .features,
+    .contact-form,
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-column.center,
+    .footer-column.right {
+      align-items: flex-start;
+      text-align: left;
+    }
+  
+    .hero-text h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-text p,
+    .hero-price {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-text h2 {
+      font-size: 1.6rem;
+    }
+  
+    .hero-text p,
+    .hero-price {
+      font-size: 0.85rem;
+    }
+  
+    .highlight {
+      font-size: 1rem;
+    }
+  
+    .order-btn,
+    .footer .footer-order-btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav {
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    body {
+      font-size: 13px;
+    }
+  
+    .container {
+      padding: 0 8px;
+    }
+  
+    .hero-text h2 {
+      font-size: 1.4rem;
+    }
+  
+    .hero-text p,
+    .hero-price {
+      font-size: 0.8rem;
+    }
+  
+    .highlight {
+      font-size: 0.9rem;
+    }
+  
+    .contact-form {
+      padding: 20px 10px;
+    }
+  
+    .footer-links a,
+    .footer .socials a,
+    .footer .footer-order-btn {
+      font-size: 12px;
+    }
+  
+    .hero-tick {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
